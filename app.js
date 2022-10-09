@@ -23,10 +23,10 @@ function checkMaxValue(maxValue) {
 
 //next I need to generate a random number
 function generateNumber(minValue, maxValue) {
-	// checkMinValue(minValue);
-	// checkMaxValue(maxValue);
+	checkMinValue(minValue);
+	checkMaxValue(maxValue);
 	// return (numberResult.innerText = Math.floor(Math.random() * 100));
-	return (numberResult.innerText = Math.floor(Math.random() * m));
+	return (numberResult.innerText = Math.floor(Math.random() * 144));
 }
 
 //next I need to create an event listener for the submit button
