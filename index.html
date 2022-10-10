@@ -5,22 +5,37 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="images/icon_img.png" />
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap");
+		</style>
+		<link rel="stylesheet" href="style.css" />
 		<title>Random Number Generator</title>
 	</head>
 	<body>
-		<h1>Random Number Generator</h1>
-		<form>
-			<label for="min">Minimum Number: </label>
-			<input type="number" name="min" id="min" />
-			<br />
-			<label for="max">Maximum Number: </label>
-			<input type="number" name="max" id="max" />
-			<br />
-			<button id="submitButton" type="submit">Generate</button>
-		</form>
-		<br />
-		<p id="result">Your random number is:</p>
-		<h2 id="generatedNumber">??</h2>
+		<div class="generator-input">
+			<h1>Random Number Generator</h1>
+			<form>
+				<label for="min">Minimum Number: </label>
+				<input type="number" name="min" id="min" />
+				<br />
+				<label for="max">Maximum Number: </label>
+				<input type="number" name="max" id="max" />
+				<br />
+				<br />
+				<button id="submitButton" type="submit">Generate</button>
+				<button
+					id="resetButton"
+					type="reset"
+					onClick="window.location.reload()"
+				>
+					Reset
+				</button>
+			</form>
+		</div>
+		<div class="generator-result">
+			<p id="result">Your random number is:</p>
+			<h2 id="generatedNumber">??</h2>
+		</div>
 		<script src="app.js"></script>
 	</body>
 </html>
